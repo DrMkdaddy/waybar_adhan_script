@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "waybar_adhan_script"
+version = "0.1.0"
+description = "My script for "
+authors = ["Noor Mkdad <alph4nir@riseup.net>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+adhan = "^0.1.1"
+
+[tool.poetry.scripts]
+waybar-adhan = "waybar_adhan_script.main:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
